@@ -161,6 +161,8 @@ li {
 
 /* Header Configs */
 
+/* At first had some problems adding the border on the header element itself. For it to show up, I had to set overflow:hidden, but then the when I expanded the main menu it would get cut. Moving the border from the header to the pseudo-element header::before solved the issue */
+
 header::before {
   content: "";
   position: absolute;
@@ -174,6 +176,7 @@ header::before {
     var(--Light-red)
   );
   z-index: -1;
+  border-radius: 0 0 0 7rem;
 }
 
 header {
@@ -182,8 +185,6 @@ header {
   position: relative;
   color: var(--text);
   min-height: 37.5rem;
-  overflow: hidden;
-  border-radius: 0 0 0 7rem;
   margin-bottom: 6rem;
 }
 
@@ -207,12 +208,13 @@ header {
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  display: grid;
+  display: none;
   gap: 1rem;
   background-color: white;
   padding: 2rem;
   width: 85%;
   margin: auto;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.397);
 }
 
 .menuHeader {
@@ -224,6 +226,10 @@ header {
   font-weight: bold;
   font-size: 1.125rem;
   padding-bottom: 1rem;
+}
+
+.arrow {
+  transform: rotate(0deg);
 }
 
 .menuHeader:hover {
