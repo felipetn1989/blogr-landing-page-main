@@ -134,6 +134,12 @@ h1 {
 h2,
 h3 {
   font-size: 1.6875rem;
+  line-height: 2rem;
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: .75rem;
 }
 
 .button {
@@ -191,7 +197,6 @@ header {
 
 .header__text {
   padding: 2rem 1.9375rem;
-  font-size: 0.75rem;
   display: grid;
   grid-template-areas:
     "one one"
@@ -202,6 +207,7 @@ header {
 
 h2.header__info {
   font-weight: var(--fw-regular);
+  font-size: 1.125rem;
 }
 
 .start {
@@ -231,8 +237,20 @@ h2.header__info {
 
 /* Main layout */
 
-section {
+section > h2,
+section > h3,
+section > p {
   padding: 0 2.25rem;
+}
+
+.grid_bloc {
+  display: grid;
+  gap: 1.25rem;
+  place-items: center;
+}
+
+.grid_bloc__image {
+  margin: 2.5rem 0;
 }
 
 section.light {
@@ -242,6 +260,26 @@ section.light {
 section.light > h2,
 section.light > h3 {
   color: var(--headings);
+}
+
+section.dark {
+  background: var(--Very-dark-gray-blue) url('../images/bg-pattern-circles.svg') no-repeat center center/cover;
+  color: white;
+  position: relative;
+  margin-top: 16rem;
+  padding-top: 13.5rem;
+  padding-bottom: 6rem;
+  border-radius: 0 7rem;
+}
+
+section.dark > h2 {
+  font-size: 2.3125rem;
+  line-height: 3.125rem;
+}
+
+section.dark > img {
+  position: absolute;
+ transform: translateY(-60%); 
 }
 
 .attribution {
