@@ -142,7 +142,8 @@ p {
   margin-bottom: 0.75rem;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -155,6 +156,7 @@ ul, li {
   border: 1px solid white;
   border-radius: 2rem;
   margin-top: 2rem;
+  width: 80%;
 }
 
 /* Header Configs */
@@ -208,6 +210,7 @@ header {
     "two two"
     "three four";
   gap: 1rem;
+  place-items: center;
 }
 
 h2.header__info {
@@ -218,10 +221,12 @@ h2.header__info {
 .start {
   color: var(--Light-red);
   background-color: white;
+  place-self: center end;
 }
 
 .learn {
   color: white;
+  place-self: center start;
 }
 
 .header__info:nth-child(1) {
@@ -268,10 +273,10 @@ section.light > h3 {
 }
 
 section.dark {
+  position: relative;
   background: var(--Very-dark-gray-blue) url("../images/bg-pattern-circles.svg")
     no-repeat center center/cover;
   color: white;
-  position: relative;
   margin-top: 16rem;
   padding-top: 13.5rem;
   padding-bottom: 6rem;
@@ -287,7 +292,7 @@ section.dark > img {
   position: absolute;
   transform: translateY(-290px);
   margin-top: 10%;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 /* Footer layout */
@@ -302,7 +307,7 @@ footer {
 
 footer img {
   margin: auto;
-  margin-bottom: 5rem ;
+  margin-bottom: 5rem;
 }
 
 footer ul {
@@ -337,4 +342,22 @@ ul li {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 30em) {
+  section.dark {
+    padding-top: 20rem;
+  }
+
+  section.dark > img {
+    position: absolute;
+    transform: translateY(-30rem);
+    padding-top: 30rem;
+  }
+
+  section.dark > h2 {
+    padding-top: 5rem;
+  }
 }
