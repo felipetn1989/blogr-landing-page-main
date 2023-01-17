@@ -203,7 +203,11 @@ header {
 }
 
 .menu_top {
-  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
   gap: 1rem;
   background-color: white;
   padding: 2rem;
