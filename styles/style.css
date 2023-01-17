@@ -43,7 +43,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  max-width: 140%;
 }
 /*
   7. Remove built-in form typography styles
@@ -140,6 +140,11 @@ h3 {
 p {
   line-height: 1.75rem;
   margin-bottom: 0.75rem;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -285,7 +290,48 @@ section.dark > img {
   max-width: 90%;
 }
 
+/* Footer layout */
+
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text);
+  border-radius: 0 5rem 0 0;
+  padding: 5rem 0;
+  margin-top: 5rem;
+}
+
+footer img {
+  margin: auto;
+  margin-bottom: 5rem ;
+}
+
+footer ul {
+  list-style-type: none;
+  font-size: 1.1875rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu_topLevel {
+  font-weight: var(--fw-semibold);
+}
+
+ul li {
+  line-height: 2rem;
+  color: #c1c1c9;
+}
+
+.menu_topLevel li {
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+  color: white;
+}
+
 .attribution {
+  margin-top: 5rem;
   font-size: 0.6875rem;
   text-align: center;
 }
