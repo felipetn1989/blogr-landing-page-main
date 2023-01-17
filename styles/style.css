@@ -139,7 +139,7 @@ h3 {
 
 p {
   line-height: 1.75rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .button {
@@ -245,7 +245,7 @@ section > p {
 
 .grid_bloc {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
   place-items: center;
 }
 
@@ -263,7 +263,8 @@ section.light > h3 {
 }
 
 section.dark {
-  background: var(--Very-dark-gray-blue) url('../images/bg-pattern-circles.svg') no-repeat center center/cover;
+  background: var(--Very-dark-gray-blue) url("../images/bg-pattern-circles.svg")
+    no-repeat center center/cover;
   color: white;
   position: relative;
   margin-top: 16rem;
@@ -279,7 +280,9 @@ section.dark > h2 {
 
 section.dark > img {
   position: absolute;
- transform: translateY(-60%); 
+  transform: translateY(-290px);
+  margin-top: 10%;
+  max-width: 90%;
 }
 
 .attribution {
