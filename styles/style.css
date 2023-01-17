@@ -198,8 +198,12 @@ header {
   width: 5rem;
 }
 
+#menuIcon:hover {
+  cursor: pointer;
+}
+
 .menu_top {
-  display: grid;
+  display: none;
   gap: 1rem;
   background-color: white;
   padding: 2rem;
@@ -216,6 +220,10 @@ header {
   font-weight: bold;
   font-size: 1.125rem;
   padding-bottom: 1rem;
+}
+
+.menuHeader:hover {
+  cursor: pointer;
 }
 
 .menuHeader:nth-child(5) {
@@ -237,6 +245,10 @@ header {
   margin-bottom: 0.6875rem;
 }
 
+.sub_menu li:hover {
+  cursor: pointer;
+}
+
 .sub_menu a {
   text-decoration: none;
 }
@@ -246,6 +258,10 @@ header {
   font-weight: var(--fw-bold);
   padding: 0.625rem 2.25rem;
   border-radius: 2rem;
+}
+
+.nav__button:hover {
+  cursor: pointer;
 }
 
 .login {
