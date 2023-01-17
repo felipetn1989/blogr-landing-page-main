@@ -156,7 +156,7 @@ li {
   border: 1px solid white;
   border-radius: 2rem;
   margin-top: 2rem;
-  width: 80%;
+  width: 90%;
 }
 
 /* Header Configs */
@@ -224,9 +224,20 @@ h2.header__info {
   place-self: center end;
 }
 
+.start:hover {
+  background-color: var(--CTA-hover-background);
+  border: unset;
+  color: white;
+}
+
 .learn {
   color: white;
   place-self: center start;
+}
+
+.learn:hover {
+  background-color: white;
+  color: var(--CTA-text);
 }
 
 .header__info:nth-child(1) {
@@ -329,7 +340,11 @@ ul li {
   color: #c1c1c9;
 }
 
-.menu_topLevel li {
+ul > a:hover {
+  text-decoration: underline;
+}
+
+.menu_topLevel {
   margin-bottom: 2rem;
   margin-top: 2.5rem;
   color: white;
