@@ -20,14 +20,13 @@
     <header>
       <div class="header__images">
         <img class="blogr_logo_top" src="images/logo.svg" alt="Blogr logo" />
-        <img src="images/icon-hamburger.svg" alt="Menu icon" />
+        <img id="menuIcon" src="images/icon-hamburger.svg" alt="Menu icon" />
       </div>
       <nav class="menu_top">
         <ul>
-          <a href="#">
-            <li>Product</li>
-          </a>
-          <ul>
+          <li class="menuHeader">Product <img src="images/icon-arrow-dark.svg" alt=""></li>
+
+          <ul class="sub_menu">
             <a href="#">
               <li>Overview</li>
             </a>
@@ -44,10 +43,10 @@
               <li>Integrations</li>
             </a>
           </ul>
-          <a href="#">
-            <li>Company</li>
-          </a>
-          <ul>
+
+          <li class="menuHeader">Company <img src="images/icon-arrow-dark.svg" alt=""></li>
+
+          <ul class="sub_menu">
             <a href="#">
               <li>About</li>
             </a>
@@ -61,10 +60,10 @@
               <li>Careers</li>
             </a>
           </ul>
-          <a href="#">
-            <li>Connect</li>
-          </a>
-          <ul>
+
+          <li class="menuHeader">Connect <img src="images/icon-arrow-dark.svg" alt=""></li>
+
+          <ul class="sub_menu">
             <a href="#">
               <li>Contact</li>
             </a>
@@ -75,13 +74,13 @@
               <li>LinkedIn</li>
             </a>
           </ul>
-          <button>
-            <li>Login</li>
-          </button>
-          <button>
-            <li>Sign Up</li>
-          </button>
         </ul>
+        <button>
+          <li>Login</li>
+        </button>
+        <button>
+          <li>Sign Up</li>
+        </button>
       </nav>
       <div class="header__text">
         <h1 class="header__info">A modern publishing platform</h1>
@@ -159,7 +158,7 @@
       <ul>
         <li class="menu_topLevel">Product</li>
 
-        <ul class="sub_menu">
+        <ul>
           <a href="#">
             <li>Overview</li>
           </a>
@@ -179,7 +178,7 @@
 
         <li class="menu_topLevel">Company</li>
 
-        <ul class="sub_menu">
+        <ul>
           <a href="#">
             <li>About</li>
           </a>
@@ -196,7 +195,7 @@
 
         <li class="menu_topLevel">Connect</li>
 
-        <ul class="sub_menu">
+        <ul>
           <a href="#">
             <li>Contact</li>
           </a>

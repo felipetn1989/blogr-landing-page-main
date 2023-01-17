@@ -199,7 +199,17 @@ header {
 }
 
 .menu_top {
-  display: none;
+  display: grid;
+  background-color: white;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  color: var(--headings);
+  font-weight: bold;
 }
 
 .header__text {
