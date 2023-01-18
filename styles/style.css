@@ -451,6 +451,8 @@ ul > a:hover {
 
 /* Media Queries */
 
+/* Added an intermediate media query to better position the phone images in bigger screens */
+
 @media screen and (min-width: 30em) {
   section.dark {
     padding-top: 20rem;
@@ -466,3 +468,34 @@ ul > a:hover {
     padding-top: 5rem;
   }
 }
+
+/* Media Query for desktops */
+
+@media screen and (min-width:60em) {
+  .blogr_logo_top {
+    width: 6.5rem;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 2.375rem;
+  }
+
+  .header__text > h2 {
+    font-size: 1.25rem;
+  }
+
+  .button {
+   width: 9rem; 
+  }
+
+}
+
+

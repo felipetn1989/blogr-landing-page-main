@@ -11,14 +11,14 @@ function menuDisplay() {
     setTimeout(() => {
       menuIcon.src = "images/icon-close.svg";
       menuIcon.style.opacity = 1;
-    }, 500);
+    }, 300);
   } else {
     menuTop.style.display = "none";
     menuIcon.style.opacity = 0;
     setTimeout(() => {
       menuIcon.src = "images/icon-hamburger.svg";
       menuIcon.style.opacity = 1;
-    }, 500);
+    }, 300);
   }
 }
 
