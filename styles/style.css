@@ -638,6 +638,15 @@ ul > a:hover {
     padding: unset;
   }
 
+  .section_3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section_3 > * {
+    flex: 1;
+  }
+
   footer ul a:hover {
     text-decoration: underline;
   }
