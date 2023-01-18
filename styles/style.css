@@ -504,6 +504,7 @@ ul > a:hover {
   .menu_top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: unset;
     top: unset;
     left: unset;
@@ -523,6 +524,11 @@ ul > a:hover {
 
   .menuHeader {
     padding: 0;
+    font-size: 1rem;
+  }
+
+  .menuHeader:hover {
+    text-decoration: underline;
   }
 
   .menuHeader:nth-child(5) {
@@ -531,12 +537,44 @@ ul > a:hover {
 
   .sub_menu {
     position: absolute;
+    transform: translateX(-20%);
     background-color: white;
     padding: 2rem;
+    width: 10rem;
   }
 
   .sub_menu li {
     color: var(--Very-dark-gray-blue);
     text-align: left;
+    font-weight: var(--fw-light);
+  }
+
+  .sub_menu li:hover {
+    font-weight: var(--fw-bold);
+    text-decoration: unset;
+  }
+
+  ul > a:hover {
+    text-decoration: unset;
+  }
+
+
+  .login {
+    color: white;
+  }
+
+  .sign {
+    background-image: unset;
+    background-color: white;
+    color: var(--Light-red);
+  }
+
+  .sign:hover {
+    background-color: var(--CTA-hover-background);
+    color: white;
+  }
+
+  footer ul a:hover {
+    text-decoration: underline;
   }
 }
