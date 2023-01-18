@@ -366,10 +366,15 @@ h2.header__info {
   margin: auto;
 }
 
+.section_1 h2 {
+  margin-bottom: 1.5rem;
+}
+
 .section__text {
   padding: 2rem;
   display: grid;
   gap: 1.5rem;
+  max-width: 30rem;
 }
 
 section.light {
@@ -386,24 +391,26 @@ section.dark {
   background: var(--Very-dark-gray-blue) url("../images/bg-pattern-circles.svg")
     no-repeat center center/cover;
   color: white;
-  /* margin-top: 11rem;
+  margin-top: 13rem;
   padding-top: 13.5rem;
-  padding-bottom: 6rem; */
+  padding-bottom: 6rem;
   border-radius: 0 7rem;
 }
 
 section.dark h2 {
   font-size: 2.3125rem;
   line-height: 3.125rem;
-  /* margin-top: 3rem; */
 }
 
-/* section.dark > img {
+section.dark > img {
   position: absolute;
-  transform: translateY(-290px);
+  transform: translateY(-20rem);
+  max-width: 30rem;
+  margin-top: 3rem;
+  /* transform: translateY(-290px);
   margin-top: 10%;
-  max-width: 100%;
-} */
+  max-width: 100%; */
+}
 
 /* Footer layout */
 
@@ -462,7 +469,7 @@ ul > a:hover {
 
 /* Added an intermediate media query to better position the phone images in bigger screens */
 
-@media screen and (min-width: 30em) {
+/* @media screen and (min-width: 30em) {
   section.dark {
     padding-top: 20rem;
   }
@@ -476,11 +483,11 @@ ul > a:hover {
   section.dark > h2 {
     padding-top: 5rem;
   }
-}
+} */
 
 /* Media Query for desktops */
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 70em) {
   body {
     text-align: left;
   }
@@ -555,8 +562,10 @@ ul > a:hover {
     text-decoration: underline;
   }
 
-  .menuHeader:nth-child(5) {
+  .header__button {
     border: unset;
+    display: flex;
+    padding: unset;
   }
 
   .sub_menu {
@@ -635,23 +644,23 @@ ul > a:hover {
     display: flex;
   }
 
-  section.dark {
+  /* section.dark {
     margin: unset;
     margin-top: 14rem;
     padding: unset;
-  }
+  } */
 
-  .section_2 > div {
+  /* .section_2 > div {
     padding: 8rem 6rem 8rem 48rem;
-  }
+  } */
 
-  section.dark > img {
+  /* section.dark > img {
     top: -10%;
     left: 8%;
     transform: unset;
     padding: unset;
     max-width: 40%;
-  }
+  } */
 
   .section_3 {
     display: flex;
@@ -665,9 +674,9 @@ ul > a:hover {
     flex: 1;
   }
 
-  .section_3 img {
+  /* .section_3 img {
     transform: translateX(-20rem);
-  }
+  } */
 
   /* Footer Configs */
 
@@ -675,17 +684,15 @@ ul > a:hover {
     text-decoration: underline;
   }
 
-  footer > img {
-    grid-area: one;
-    place-self: start start;
+  footer img {
     margin: 0;
+    width: 6rem;
+    align-self: flex-start;
   }
 
-  footer > ul {
-    grid-area: two;
+  .footer__menu {
     display: flex;
-    justify-content: flex-start;
-    gap: 13rem;
+    gap: 11rem;
     font-size: 0.875rem;
   }
 
@@ -693,17 +700,14 @@ ul > a:hover {
     font-size: 1rem;
   }
 
-  footer > div {
-    grid-area: three;
+  footer {
+    padding: 4rem 10rem;
   }
 
-  footer {
-    display: grid;
-    grid-template-areas:
-      "one two"
-      "three three";
-    padding: 4rem 10rem;
-    grid-template-columns: 1fr 3fr;
+  .footer__top {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12rem;
   }
 
   .menu_topLevel {
