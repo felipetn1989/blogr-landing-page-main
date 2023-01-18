@@ -472,6 +472,14 @@ ul > a:hover {
 /* Media Query for desktops */
 
 @media screen and (min-width: 60em) {
+  body {
+    text-align: left;
+  }
+
+  section {
+    padding: 0 6rem;
+  }
+
   .blogr_logo_top {
     width: 6.5rem;
   }
@@ -494,9 +502,11 @@ ul > a:hover {
 
   .button {
     width: 9rem;
+    text-align: center;
   }
 
   /* Desktop Menu */
+
   .page_top {
     display: flex;
   }
@@ -558,7 +568,6 @@ ul > a:hover {
     text-decoration: unset;
   }
 
-
   .login {
     color: white;
   }
@@ -572,6 +581,61 @@ ul > a:hover {
   .sign:hover {
     background-color: var(--CTA-hover-background);
     color: white;
+  }
+
+  /* Main Configs */
+
+  .section__text {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .section_1_child:nth-child(1) {
+    grid-area: one;
+  }
+
+  .section_1_child:nth-child(2) {
+    grid-area: two;
+  }
+
+  .section_1_child:nth-child(3) {
+    grid-area: three;
+  }
+
+  .section_1 {
+    grid-template-areas:
+      "one one"
+      "three two";
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .section_1 h2 {
+    margin-bottom: 7rem;
+  }
+
+  .section_1 p {
+    margin-bottom: 3rem;
+  }
+
+  .section_2 {
+    display: flex;
+  }
+
+  section.dark {
+    margin: unset;
+    margin-top: 14rem;
+    padding: unset;
+  }
+
+  .section_2 > div {
+    padding: 8rem 6rem 8rem 48rem;
+  }
+
+  section.dark > img {
+    top: -50%;
+    left: 8%;
+    transform: unset;
+    padding: unset;
   }
 
   footer ul a:hover {
