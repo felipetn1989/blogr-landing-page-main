@@ -434,10 +434,6 @@ footer a {
   color: white;
 }
 
-.menu_topLevel {
-  font-weight: var(--fw-semibold);
-}
-
 ul li a {
   line-height: 2.5rem;
   color: #c1c1c9;
@@ -448,9 +444,14 @@ li > a:hover {
 }
 
 .menu_topLevel {
+  font-weight: var(--fw-semibold);
   margin-bottom: 2rem;
   margin-top: 2.5rem;
   color: white;
+}
+
+.menu_topLevel > ul {
+  margin-top: 1.5rem;
 }
 
 .attribution {
