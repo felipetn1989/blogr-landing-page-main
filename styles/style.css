@@ -472,6 +472,7 @@ ul > a:hover {
   header {
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat center
       center/cover;
+      margin-bottom: 9rem;
   }
 
   section {
@@ -507,6 +508,7 @@ ul > a:hover {
 
   .page_top {
     display: flex;
+    padding: 0 8rem;
   }
 
   .menu_top {
@@ -523,7 +525,7 @@ ul > a:hover {
 
   .menu_top > ul {
     columns: 3;
-    column-gap: 5rem;
+    column-gap: 2rem;
   }
 
   .menu_top li {
@@ -615,20 +617,25 @@ ul > a:hover {
   }
 
   .section_1 img {
-    transform: translateX(6rem);
+    transform: translateX(18rem);
+    width: 100%;
   }
 
   section.dark {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2rem;
+    padding: 4.5rem 3rem;
+  }
+
+  .dark .section__text {
+    width: 50%;
   }
 
   section.dark > img {
-    top: -40%;
-    left: 50%;
+    top: -10rem;
+    left: 2.5rem;
     transform: unset;
-    transform: translateX(-100%);
+    max-width: 35rem;
   }
 
   .section_3 {
@@ -643,9 +650,10 @@ ul > a:hover {
     flex: 1;
   }
 
-  /* .section_3 img {
-    transform: translateX(-20rem);
-  } */
+  .section_3 img {
+    transform: translateX(-19rem);
+    width: 140%;
+  }
 
   /* Footer Configs */
 
