@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <div class="background"></div>
+      <div class="page_top">
         <div class="header__images">
           <img class="blogr_logo_top" src="images/logo.svg" alt="Blogr logo" />
           <img id="menuIcon" src="images/icon-hamburger.svg" alt="Menu icon" />
@@ -27,7 +27,13 @@
           <ul>
             <li class="menuHeader">
               Product
-              <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              <picture>
+                <source
+                  media="(min-width:60em)"
+                  srcset="images/icon-arrow-light.svg"
+                />
+                <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              </picture>
             </li>
             <ul class="sub_menu">
               <a href="#">
@@ -48,7 +54,13 @@
             </ul>
             <li class="menuHeader">
               Company
-              <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              <picture>
+                <source
+                  media="(min-width:60em)"
+                  srcset="images/icon-arrow-light.svg"
+                />
+                <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              </picture>
             </li>
             <ul class="sub_menu">
               <a href="#">
@@ -66,7 +78,13 @@
             </ul>
             <li class="menuHeader">
               Connect
-              <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              <picture>
+                <source
+                  media="(min-width:60em)"
+                  srcset="images/icon-arrow-light.svg"
+                />
+                <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+              </picture>
             </li>
             <ul class="sub_menu">
               <a href="#">
@@ -83,14 +101,15 @@
           <button class="nav__button login">Login</button>
           <button class="nav__button sign">Sign Up</button>
         </nav>
-        <div class="header__text">
-          <h1 class="header__info">A modern publishing platform</h1>
-          <h2 class="header__info">
-            Grow your audience and build your online brand
-          </h2>
-          <a href="#" class="button start header__info">Start for Free </a>
-          <a href="" class="button learn header__info">Learn More</a>
-        </div>
+      </div>
+      <div class="header__text">
+        <h1 class="header__info">A modern publishing platform</h1>
+        <h2 class="header__info">
+          Grow your audience and build your online brand
+        </h2>
+        <a href="#" class="button start header__info">Start for Free </a>
+        <a href="" class="button learn header__info">Learn More</a>
+      </div>
     </header>
 
     <main>

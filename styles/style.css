@@ -471,7 +471,7 @@ ul > a:hover {
 
 /* Media Query for desktops */
 
-@media screen and (min-width:60em) {
+@media screen and (min-width: 60em) {
   .blogr_logo_top {
     width: 6.5rem;
   }
@@ -493,9 +493,50 @@ ul > a:hover {
   }
 
   .button {
-   width: 9rem; 
+    width: 9rem;
   }
 
+  /* Desktop Menu */
+  .page_top {
+    display: flex;
+  }
+
+  .menu_top {
+    display: flex;
+    align-items: center;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .menu_top > ul {
+    columns: 3;
+    column-gap: 5rem;
+  }
+
+  .menu_top li {
+    color: white;
+  }
+
+  .menuHeader {
+    padding: 0;
+  }
+
+  .menuHeader:nth-child(5) {
+    border: unset;
+  }
+
+  .sub_menu {
+    position: absolute;
+    background-color: white;
+    padding: 2rem;
+  }
+
+  .sub_menu li {
+    color: var(--Very-dark-gray-blue);
+    text-align: left;
+  }
 }
-
-
