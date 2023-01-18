@@ -435,7 +435,7 @@ footer a {
 }
 
 ul li a {
-  line-height: 2.5rem;
+  line-height: 2rem;
   color: #c1c1c9;
 }
 
@@ -452,6 +452,7 @@ li > a:hover {
 
 .menu_topLevel > ul {
   margin-top: 1.5rem;
+  font-weight: var(--fw-medium);
 }
 
 .attribution {
