@@ -33,6 +33,13 @@ menuHeaders.forEach((menuHeader, index) =>
 );
 
 function toggle_submenu(i) {
+  for (let j = 0; j < subMenus.length; j++) {
+    if (j != i) {
+      subMenus[j].style.display = 'none'
+    }
+  }
+
+
   if (window.getComputedStyle(subMenus[i]).display == "none") {
     subMenus[i].style.display = "block";
     arrows[i].style.transform = "rotate(180deg)";

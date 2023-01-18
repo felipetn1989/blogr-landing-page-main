@@ -487,6 +487,10 @@ ul > a:hover {
     display: none;
   }
 
+  .sub_menu {
+    display: none;
+  }
+
   h1 {
     font-size: 3.75rem;
   }
