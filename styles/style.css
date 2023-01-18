@@ -518,7 +518,7 @@ li > a:hover {
   }
 
   .menu_top {
-    display: flex;
+    display: flex !important; 
     align-items: center;
     justify-content: space-between;
     position: unset;
@@ -554,6 +554,7 @@ li > a:hover {
   }
 
   .sub_menu {
+    display: none;
     position: absolute;
     transform: translateX(-20%);
     background-color: white;
