@@ -393,7 +393,7 @@ section.dark {
   color: white;
   margin-top: 13rem;
   padding-top: 13.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   border-radius: 0 7rem;
 }
 
@@ -407,9 +407,6 @@ section.dark > img {
   transform: translateY(-20rem);
   max-width: 30rem;
   margin-top: 3rem;
-  /* transform: translateY(-290px);
-  margin-top: 10%;
-  max-width: 100%; */
 }
 
 /* Footer layout */
@@ -419,7 +416,7 @@ footer {
   color: var(--footer-text);
   border-radius: 0 5rem 0 0;
   padding: 5rem 0;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 footer img {
@@ -464,26 +461,6 @@ ul > a:hover {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-/* Media Queries */
-
-/* Added an intermediate media query to better position the phone images in bigger screens */
-
-/* @media screen and (min-width: 30em) {
-  section.dark {
-    padding-top: 20rem;
-  }
-
-  section.dark > img {
-    position: absolute;
-    transform: translateY(-30rem);
-    padding-top: 30rem;
-  }
-
-  section.dark > h2 {
-    padding-top: 5rem;
-  }
-} */
 
 /* Media Query for desktops */
 
@@ -611,6 +588,7 @@ ul > a:hover {
   .section__text {
     display: grid;
     gap: 2rem;
+    max-width: unset;
   }
 
   .section_1_child:nth-child(1) {
@@ -640,27 +618,18 @@ ul > a:hover {
     transform: translateX(6rem);
   }
 
-  .section_2 {
+  section.dark {
     display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
   }
 
-  /* section.dark {
-    margin: unset;
-    margin-top: 14rem;
-    padding: unset;
-  } */
-
-  /* .section_2 > div {
-    padding: 8rem 6rem 8rem 48rem;
-  } */
-
-  /* section.dark > img {
-    top: -10%;
-    left: 8%;
+  section.dark > img {
+    top: -40%;
+    left: 50%;
     transform: unset;
-    padding: unset;
-    max-width: 40%;
-  } */
+    transform: translateX(-100%);
+  }
 
   .section_3 {
     display: flex;
