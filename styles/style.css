@@ -236,8 +236,9 @@ header {
   cursor: pointer;
 }
 
-.menuHeader:nth-child(5) {
-  border-bottom: 1px solid lightgray;
+.header__button {
+  border-top: 1px solid lightgray;
+  padding-top: 1rem;
 }
 
 .sub_menu {
@@ -264,7 +265,7 @@ header {
 }
 
 .nav__button {
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   font-weight: var(--fw-bold);
   padding: 0.625rem 2.25rem;
   border-radius: 2rem;
@@ -290,6 +291,11 @@ header {
   color: white;
   width: fit-content;
   margin: auto;
+}
+
+.header__button {
+  display: grid;
+  gap: 0.75rem;
 }
 
 .header__text {
@@ -348,20 +354,22 @@ h2.header__info {
 
 /* Main layout */
 
-section > h2,
-section > h3,
-section > p {
-  padding: 0 2.25rem;
-}
-
 .grid_bloc {
   display: grid;
   gap: 1.5rem;
   place-items: center;
+  margin-top: 2rem;
 }
 
 .grid_bloc__image {
-  margin: 2.5rem 0;
+  width: 100%;
+  margin: auto;
+}
+
+.section__text {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 section.light {
@@ -378,23 +386,24 @@ section.dark {
   background: var(--Very-dark-gray-blue) url("../images/bg-pattern-circles.svg")
     no-repeat center center/cover;
   color: white;
-  margin-top: 16rem;
+  /* margin-top: 11rem;
   padding-top: 13.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 6rem; */
   border-radius: 0 7rem;
 }
 
-section.dark > h2 {
+section.dark h2 {
   font-size: 2.3125rem;
   line-height: 3.125rem;
+  /* margin-top: 3rem; */
 }
 
-section.dark > img {
+/* section.dark > img {
   position: absolute;
   transform: translateY(-290px);
   margin-top: 10%;
   max-width: 100%;
-}
+} */
 
 /* Footer layout */
 
@@ -637,10 +646,11 @@ ul > a:hover {
   }
 
   section.dark > img {
-    top: -50%;
+    top: -10%;
     left: 8%;
     transform: unset;
     padding: unset;
+    max-width: 40%;
   }
 
   .section_3 {
@@ -656,7 +666,7 @@ ul > a:hover {
   }
 
   .section_3 img {
-    transform: translateX(-17rem);
+    transform: translateX(-20rem);
   }
 
   /* Footer Configs */
