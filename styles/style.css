@@ -647,6 +647,8 @@ ul > a:hover {
     flex: 1;
   }
 
+  /* Footer Configs */
+
   footer ul a:hover {
     text-decoration: underline;
   }
