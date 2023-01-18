@@ -674,7 +674,8 @@ ul > a:hover {
   footer > ul {
     grid-area: two;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 13rem;
     font-size: .875rem;
   }
 
@@ -692,7 +693,7 @@ ul > a:hover {
     "one two"
     "three three";
     padding: 4rem 10rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .menu_topLevel {
