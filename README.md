@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot%202023-02-09%20at%2007-25-54%20Frontend%20Mentor%20Blogr.png)
 
 
 ### Links
