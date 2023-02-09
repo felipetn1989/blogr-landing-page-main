@@ -475,7 +475,6 @@ li > a:hover {
   body {
     text-align: left;
     overflow-x: hidden;
-    max-width: 90rem;
   }
 
   header {
