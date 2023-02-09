@@ -474,6 +474,8 @@ li > a:hover {
 @media screen and (min-width: 70em) {
   body {
     text-align: left;
+    overflow-x: hidden;
+    max-width: 90rem;
   }
 
   header {

@@ -25,11 +25,6 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./images/Screenshot%202023-02-09%20at%2007-25-54%20Frontend%20Mentor%20Blogr.png)
-
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
