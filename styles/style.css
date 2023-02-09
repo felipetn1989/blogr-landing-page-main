@@ -504,10 +504,6 @@ li > a:hover {
     display: none;
   }
 
-  .sub_menu {
-    display: none;
-  }
-
   h1 {
     font-size: 3.75rem;
   }
@@ -571,25 +567,22 @@ li > a:hover {
   .sub_menu {
     display: none;
     position: absolute;
-    transform: translateX(-20%);
+    top: 7rem;
     background-color: white;
     padding: 2rem;
     width: 10rem;
   }
 
-  .sub_menu li {
+  .sub_menu li a {
     color: var(--Very-dark-gray-blue);
     text-align: left;
     font-weight: var(--fw-light);
   }
 
-  .sub_menu li:hover {
+  .sub_menu > li > a:hover {
     font-weight: var(--fw-bold);
-    text-decoration: unset;
-  }
-
-  ul > a:hover {
-    text-decoration: unset;
+    text-decoration: none;
+  
   }
 
   .login {
